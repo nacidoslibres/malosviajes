@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     font-family: sans-serif;
+    font-size: 0.9rem;
 }
 
 body::after {
@@ -146,6 +147,10 @@ hr {
     color: #000000;
 }
 
+ul {
+    padding-left: 15px;
+}
+
 picture {
     display: block;
 }
@@ -165,15 +170,6 @@ blockquote {
     font-style: oblique;
     margin: 10px 0;
     padding: 5px 10px;
-}
-
-.space-top-m {
-    padding-top: 20px;
-}
-
-.space-side-s {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .main-header {
@@ -310,17 +306,29 @@ blockquote {
     margin-top: 0;
 }
 
-.padding-all-xs {
-    padding: 10px;
-}
-
-.padding-all-m {
+.padding-mb {
     padding: 20px;
 }
 
+.padding-all-xs {
+    padding: 5px;
+}
+
+.padding-all-m {
+    padding: 10px;
+}
 
 .padding-all-l {
-    padding: 40px;
+    padding: 20px;
+}
+
+.space-top-m {
+    padding-top: 20px;
+}
+
+.space-side-s {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .alt-color {
@@ -400,6 +408,10 @@ blockquote {
 }
 
 @media only screen and (min-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -408,12 +420,32 @@ blockquote {
         font-size: 2rem;
     }
 
+    ul {
+        padding-left: 25px;
+    }
+
     .grid-x2 {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .content {
         height: calc(100vh - 50px);
+    }
+
+    .padding-mb {
+        padding: initial;
+    }
+
+    .padding-all-xs {
+        padding: 10px;
+    }
+
+    .padding-all-m {
+        padding: 20px;
+    }
+
+    .padding-all-l {
+        padding: 40px;
     }
 }
 
