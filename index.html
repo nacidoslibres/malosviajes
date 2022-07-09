@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -12,9 +13,9 @@
     <meta name="og:description" property="og:description" content="Para que no te pegues malos viajes">
     <meta name="og:image" property="og:image" content="/assets/image/book.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preload" href="/assets/font/ttnorms-black.woff" as="font" type="font/woff">
-    <link rel="preload" href="/assets/font/ttnorms-black.otf" as="font" type="font/opentype">
-    <link rel="preload" href="/assets/css/main.css" as="style">
+    <link rel="preload" href="./assets/font/ttnorms-black.woff" as="font" type="font/woff">
+    <link rel="preload" href="./assets/font/ttnorms-black.otf" as="font" type="font/opentype">
+    <link rel="preload" href="./assets/css/main.css" as="style">
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css" media="screen" />
   </head>
   <body>
@@ -27,6 +28,28 @@
         <a href="#contacto">Contacto</a>
       </nav>
     </header>
+    <div id="modalBook" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Leer</h2>
+        </div>
+        <div class="modal-body">
+          <embed src="./assets/pdf/libro-final-web.pdf" width="100%" height="100%" type="application/pdf">
+        </div>
+      </div>
+    </div>
+    <div id="modalProdBook" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Libro Producción</h2>
+        </div>
+        <div class="modal-body">
+          <embed src="./assets/pdf/libro-prod-web.pdf" width="100%" height="100%" type="application/pdf">
+        </div>
+      </div>
+    </div>
     <section id="libro" class="content">
       <div class="container grid grid-x2 center-vertical">
         <picture>
@@ -37,7 +60,7 @@
           <h1>
             Para que no te pegues malos viajes
           </h1>
-          <a href="#libro" class="button">
+          <a id="openBook" href="#libro" class="button">
             Leer
           </a>
           <a href="#libro" class="button">
@@ -74,16 +97,8 @@
               <span class="list-item">
                 <img src="./assets/image/item4.png" loading="lazy">
               </span>
-              <a href="./assets/pdf/libro-prod-web.pdf" target="_blank">
+              <a id="openProdBook" href="#saber">
                 Libro de Produccion
-              </a>
-            </li>
-            <li>
-              <span class="list-item">
-                <img src="./assets/image/item3.png" loading="lazy">
-              </span>
-              <a href="#">
-                Analisis de sustancias
               </a>
             </li>
             <li>
@@ -92,6 +107,14 @@
               </span>
               <a href="#">
                 Cuentanos tu mal viaje
+              </a>
+            </li>
+            <li>
+              <span class="list-item">
+                <img src="./assets/image/item3.png" loading="lazy">
+              </span>
+              <a href="#">
+                Analisis de sustancias
               </a>
             </li>
             <li>
@@ -215,7 +238,7 @@
             </li>
             <li>
               <a href="mailto:delaeuforiaalosmalosviajes@gmail.com" target="_blank">
-              delaeuforiaalosmalosviajes@gmail.com
+                delaeuforiaalosmalosviajes@gmail.com
               </a>
             </li>
           </ul>
@@ -252,5 +275,6 @@
         </span>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
