@@ -118,6 +118,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 h1 span {
@@ -197,6 +198,16 @@ blockquote {
     position: relative;
 }
 
+.content .full-mb {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.content .full-mb img {
+    max-width: 100%;
+}
+
 .content-black {
     background-color: #000;
     color: #FFF;
@@ -217,7 +228,7 @@ blockquote {
     height: 100%;
     width: 100%;
     display: block;
-    padding: 0 8px;
+    padding: 0;
 }
 
 .center {
@@ -414,6 +425,7 @@ blockquote {
 
     h1 {
         font-size: 3rem;
+        margin-top: initial;
     }
 
     h2 {
@@ -430,6 +442,10 @@ blockquote {
 
     .content {
         height: calc(100vh - 50px);
+    }
+
+    .content-bg {
+        padding: 0 8px;
     }
 
     .padding-mb {
